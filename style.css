@@ -1,0 +1,139 @@
+html, body {
+  height: 100%;
+  width: 1440px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+main{
+  margin: auto;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  border-radius: 8px;
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 35px;
+    border: 8px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    min-width: 270px;
+    max-width: 270px;
+    border-radius: 8px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+.suv{
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75)e;
+    padding: 35px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    min-width: 270px;
+    max-width: 280px;
+  }
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 35px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    font-size: 15px;
+    border-right: 8px;
+    min-width: 270px;
+    max-width: 270px;
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    }
+h1{
+  font-family: Big Shoulders Display;
+  Font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.sedan .LM{
+  color: hsl(31, 77%, 52%);
+  padding: 10px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100vw;
+  max-width: 75%;
+  text-align: center;
+}
+.suv .LM{
+  color: hsl(184, 100%, 22%);
+  padding: 10px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100vw;
+  max-width: 75%;
+  text-align: center;
+}
+.luxury .LM{
+  color: hsl(179, 100%, 13%);
+  padding: 10px;
+  background-color: hsl(0, 0%, 95%);;
+  border-radius: 100vw;
+  max-width: 75%;
+  text-align: center;
+}
+p{
+ padding-bottom: 75px; 
+}
+body{
+  background-color: #c0c0c4;
+}
+.main{
+  display: grid;
+  width: 50%;
+  margin: auto;
+  align-content: center;
+  height: 150vh;
+  grid-gap: 10px;
+  grid-template-areas: 
+  'o o y'
+  'g b b';
+}
+.orange{
+  background-color: #be5713;
+  grid-area: o;
+  padding: 55px;
+  height: 100px;
+}
+.yellow{
+  background-color: #d59e07;
+  grid-area: y;
+  padding: 55px;
+  height: 100px;
+}
+.green{
+  background-color: #009900;
+  grid-area: g;
+  padding: 65px;
+  height: 120px;
+}
+.blue{
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.skyblue{
+  padding: 50px;
+  height: 20px;
+  background-color: #1f7fe5;
+}
+.cyan{
+  padding: 50px;
+  height: 20px;
+  background-color: #1f7fe5;
+}
