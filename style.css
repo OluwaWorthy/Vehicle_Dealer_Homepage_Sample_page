@@ -87,53 +87,5 @@ h1{
   text-align: center;
 }
 p{
- padding-bottom: 75px; 
-}
-body{
-  background-color: #c0c0c4;
-}
-.main{
-  display: grid;
-  width: 50%;
-  margin: auto;
-  align-content: center;
-  height: 150vh;
-  grid-gap: 10px;
-  grid-template-areas: 
-  'o o y'
-  'g b b';
-}
-.orange{
-  background-color: #be5713;
-  grid-area: o;
-  padding: 55px;
-  height: 100px;
-}
-.yellow{
-  background-color: #d59e07;
-  grid-area: y;
-  padding: 55px;
-  height: 100px;
-}
-.green{
-  background-color: #009900;
-  grid-area: g;
-  padding: 65px;
-  height: 120px;
-}
-.blue{
-  grid-area: b;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.skyblue{
-  padding: 50px;
-  height: 20px;
-  background-color: #1f7fe5;
-}
-.cyan{
-  padding: 50px;
-  height: 20px;
-  background-color: #1f7fe5;
-}
+  padding-bottom: 75px; 
+ }
