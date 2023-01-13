@@ -1,6 +1,6 @@
 html, body {
-  height: 100%;
-  width: 1440px;
+  height: 100vh;
+  width: 100%;
 }
 *{
   margin: 0;
@@ -10,51 +10,58 @@ html, body {
 main{
   margin: auto;
   display: flex;
-  height: 100vh;
+  height: 95vh;
   justify-content: center;
   align-items: center;
   width: 75%;
   border-radius: 8px;
+  padding: 2%;
 }
 
 .sedan{
     background-color: hsl(31, 77%, 52%);
     color: hsla(0, 0%, 100%, 0.75);
-    padding: 35px;
+    padding: 4%;
     border: 8px;
     font-family: Lexend Deca;
     font-weight: 400;
     font-size: 15px;
-    min-width: 270px;
-    max-width: 270px;
-    border-radius: 8px;
+    width: 33.3%;
+    border-radius: 0.8%;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+    height: 100%;
     }
 .suv{
     background-color: hsl(184, 100%, 22%);
-    color: hsla(0, 0%, 100%, 0.75)e;
-    padding: 35px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 4%;                                                                                                                                                                                                                     
     font-family: Lexend Deca;
     font-weight: 400;
     font-size: 15px;
-    min-width: 270px;
-    max-width: 280px;
+    width: 33.3%;
+    border: 8px;
+    border-radius: 0.8%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    height: 100%;
   }
 .luxury{
     background-color: hsl(179, 100%, 13%);
     color: hsla(0, 0%, 100%, 0.75);
-    padding: 35px;
+    padding: 4%;
     font-family: Lexend Deca;
     font-weight: 400;
     font-size: 15px;
-    border-right: 8px;
-    min-width: 270px;
-    max-width: 270px;
-    border-radius: 8px;
+    border: 8px;
+    width: 33.3%;
+    border-radius: 0.8%;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
-    }
+    height: 100%;
+  }
 h1{
   font-family: Big Shoulders Display;
   Font-weight: 700;
@@ -64,7 +71,7 @@ h1{
 }
 .sedan .LM{
   color: hsl(31, 77%, 52%);
-  padding: 10px;
+  padding: 1.2%;
   background-color: hsl(0, 0%, 95%);
   border-radius: 100vw;
   max-width: 75%;
@@ -72,7 +79,7 @@ h1{
 }
 .suv .LM{
   color: hsl(184, 100%, 22%);
-  padding: 10px;
+  padding: 1.2%;
   background-color: hsl(0, 0%, 95%);
   border-radius: 100vw;
   max-width: 75%;
@@ -80,12 +87,57 @@ h1{
 }
 .luxury .LM{
   color: hsl(179, 100%, 13%);
-  padding: 10px;
+  padding: 1.2%;
   background-color: hsl(0, 0%, 95%);;
   border-radius: 100vw;
   max-width: 75%;
   text-align: center;
 }
 p{
-  padding-bottom: 75px; 
+  padding-bottom: 80%; 
  }
+
+ @media(max-width:767px){
+  main{
+     flex-direction: column;
+     height: 95vh;
+     }
+  .sedan{
+    min-width: 100%;
+    max-width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 7%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .suv{
+    min-width: 100%;
+    max-width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 7%;
+  }
+  .luxury{
+    min-width: 100%;
+    max-width: 100%;
+    height: 30%;
+    display: flex;
+    padding: 7%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .sedan1{
+    padding-right: 4%;
+  }
+  p{
+    padding-bottom: 6%;
+  }
+  .LM{
+    padding: 0.2%;
+  }
+    }
